@@ -57,6 +57,7 @@ export default function Home() {
 
     return (
         <div className="flex flex-col justify-center items-center">
+            
            <div className="h1">Title of the App</div>
            <div className="w-full px-3 mt-7">
                 <PrimaryButton
