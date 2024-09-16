@@ -195,3 +195,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 - [Discord](https://discord.com/invite/celo)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- DEPLOYED VERCEL APP-->
+[Live Link](https://taxi-app-react-app.vercel.app/)
+Use this link to interact with the dapp on Minipay
