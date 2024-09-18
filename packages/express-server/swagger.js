@@ -10,7 +10,7 @@ const options = {
       description: 'Test backend system to test data models for taxiApp',
     },
   },
-  apis: ['./apiRoutes.js'], // Path to your API routes
+  apis: ['./docs.js'], // Path to your API routes
 };
 
 const specs = swaggerJsdoc(options);
