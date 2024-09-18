@@ -3,8 +3,16 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 const PassengersList = () => {
-  const [passengers, setPassengers] = useState([]);
+  interface Passenger{
+    _id:string;
+    name:string;
+    email:string;
+    walletAddress:string;
+    phoneNumber:string;
+  }
+  const [passengers, setPassengers] = useState<Passenger[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
