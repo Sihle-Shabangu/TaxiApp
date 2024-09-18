@@ -31,6 +31,8 @@ export const useWeb3 = () => {
             });
 
             let [address] = await walletClient.getAddresses();
+            // logic to check if the address is in the db
+            
             setAddress(address);
         }
     };

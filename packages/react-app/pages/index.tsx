@@ -10,8 +10,6 @@ export default function Home() {
         address,
         getUserAddress,
         sendCUSD,
-        mintMinipayNFT,
-        getNFTs,
         signTransaction,
     } = useWeb3();
     const [cUSDLoading, setCUSDLoading] = useState(false);
@@ -19,20 +17,15 @@ export default function Home() {
     const [userOwnedNFTs, setUserOwnedNFTs] = useState<string[]>([]);
     const [tx, setTx] = useState<any>(undefined);
     const router = useRouter();
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState(false);
+
 
     useEffect(() => {
         getUserAddress();
     }, []);
 
-    useEffect(() => {
-        const getData = async () => {
-            const tokenURIs = await getNFTs();
-            setUserOwnedNFTs(tokenURIs);
-        };
-        if (address) {
-            getData();
-        }
-    }, [address]);
 
     async function scanToPay() {
     //    logic for openning qr code scanner
@@ -52,8 +45,10 @@ export default function Home() {
 
     async function topUp() {
         // logic for opennig top ip page
-        router.push(`/topUpTrips`);
+        router.push(`/get-passengers`);
     }
+    
+
 
     return (
         <div className="flex flex-col justify-center items-center">
@@ -66,6 +61,10 @@ export default function Home() {
                     title="Scan QR Code"
                     // widthFull
                 />
+                <div className="h2 text-center">
+                    Your address:{" "}
+                    <span className="font-bold text-sm">{address}</span>
+                </div>
             </div>
            {/* <div className="h1">Top Up </div> */}
            <div className="w-full px-3 mt-7">
@@ -81,3 +80,7 @@ export default function Home() {
         </div>
     );
 }
+function setError(arg0: string) {
+    throw new Error("Function not implemented.");
+}
+

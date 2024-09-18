@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Custom Celo Composer project.",
   "private": true,
-  "author": "Kat",
+  "author": "Katlego, Sihle, Thabani, Alfios",
   "license": "MIT",
   "scripts": {
     "react-app:dev": "yarn workspace @celo-composer-minipay-template/react-app dev",
