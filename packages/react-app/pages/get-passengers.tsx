@@ -21,7 +21,7 @@ const PassengersList = () => {
         setError('');
     try {
       // Make GET request to fetch passengers
-      const response = await axios.get('http://localhost:3001/api/passengers', {
+      const response = await axios.get('https://taxi-backend-99477f42d23c.herokuapp.com/api/passengers', {
         headers: {
           'Content-Type': 'application/json', // Optional: the server might automatically set this
         },
@@ -76,3 +76,5 @@ const PassengersList = () => {
 };
 
 export default PassengersList;
+
+

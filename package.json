@@ -32,6 +32,10 @@
   ],
   "dependencies": {
     "concurrently": "^9.0.1",
+<<<<<<< Updated upstream
     "cors": "^2.8.5"
+=======
+    "web3": "^4.13.0"
+>>>>>>> Stashed changes
   }
 }
