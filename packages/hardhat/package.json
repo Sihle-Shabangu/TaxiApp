@@ -21,6 +21,6 @@
     "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@openzeppelin/contracts": "^5.0.2",
     "dotenv": "^16.4.3",
-    "ethers": "^6.11.0"
+    "ethers": "^6.13.2"
   }
 }
