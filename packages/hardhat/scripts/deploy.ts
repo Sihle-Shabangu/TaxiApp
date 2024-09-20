@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const TaxiApp = await ethers.deployContract("TaxiApp");
+  const TaxiApp = await ethers.deployContract("TaxiManagement");
 
   await TaxiApp.waitForDeployment();
 
